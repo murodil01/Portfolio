@@ -199,6 +199,7 @@ const Projects = () => {
         {/* Navigation Buttons */}
         <div className="flex justify-center gap-6 mt-8">
           <button
+            aria-label="prev"
             onClick={prevSlide}
             disabled={isAnimating}
             className="bg-white/10 backdrop-blur-md hover:bg-white/20 p-4 rounded-full transition-all duration-300 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed shadow-xl"
@@ -206,6 +207,7 @@ const Projects = () => {
             <ChevronLeft className="w-6 h-6" />
           </button>
           <button
+            aria-label="next"
             onClick={nextSlide}
             disabled={isAnimating}
             className="bg-white/10 backdrop-blur-md hover:bg-white/20 p-4 rounded-full transition-all duration-300 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed shadow-xl"
@@ -214,8 +216,7 @@ const Projects = () => {
           </button>
         </div>
 
-        {/* Pagination Dots */}
-        <div className="flex justify-center gap-2 mt-8">
+        <div className="flex justify-center gap-3 mt-8">
           {projects.map((_, index) => (
             <button
               key={index}
@@ -229,9 +230,10 @@ const Projects = () => {
               className={`transition-all duration-300 rounded-full ${
                 index === currentIndex
                   ? "w-12 h-3 bg-linear-to-r from-purple-400 to-pink-400"
-                  : "w-3 h-3 bg-gray-500"
+                  : "w-4 h-4 bg-gray-500"
               }`}
               aria-label={`Go to slide ${index + 1}`}
+              style={{ minWidth: "20px", minHeight: "20px" }} // mobil uchun
             />
           ))}
         </div>

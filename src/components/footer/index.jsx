@@ -25,38 +25,53 @@ const Footer = () => {
         </svg>
 
         {/* Contact Info */}
-        <div className="flex space-x-4 mb-2 md:mb-0">
-          <span>+998 90 094 00 83</span>
-          <span>nurmamatovmirodil978@gmail.com</span>
+        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 mb-2 md:mb-0">
+          <a
+            href="tel:+998900940083"
+            className="hover:underline"
+            aria-label="Call phone number"
+          >
+            +998 90 094 00 83
+          </a>
+          <a
+            href="mailto:nurmamatovmirodil978@gmail.com"
+            className="hover:underline"
+            aria-label="Send email"
+          >
+            nurmamatovmirodil978@gmail.com
+          </a>
         </div>
 
         {/* Social Icons */}
-        <div className="flex space-x-4 text-2xl">
+        <div className="flex items-center space-x-4 text-2xl">
           <a
             href="https://github.com/murodil01"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
             className="text-gray-600 hover:text-gray-500 transition-colors duration-300"
           >
-            <FaGithub />
+            <FaGithub size={30} />
           </a>
 
           <a
             href="https://t.me/Murodil_N"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Telegram"
             className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
           >
-            <FaTelegram />
+            <FaTelegram size={30} />
           </a>
 
           <a
             href="https://linkedin.com/in/murodil01"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
             className="text-blue-600 hover:text-blue-800 transition-colors duration-300"
           >
-            <FaLinkedin />
+            <FaLinkedin size={30} />
           </a>
         </div>
       </div>
