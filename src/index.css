@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9f9fd;
+  color: #42446e;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode */
+html.dark body {
+  background: #0d0d0d; /* asosiy qora */
+  color: white; /* text */
+}
+
+/* Navbar Dark Mode */
+html.dark .navbar {
+  background: #0d0d0d; /* asosiy qora */
+}
+
+html.dark .bg_change {
+  background: #0d0d0d;
+}
