@@ -157,7 +157,7 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden bg-[#f9f9fd] px-2 pt-2 pb-4 shadow-md space-y-1">
+        <div className="md:hidden bg-[#f9f9fd] bg_change px-2 pt-2 pb-4 shadow-md space-y-1">
           {menuItems.map((item) =>
             item.type === "route" ? (
               <button
